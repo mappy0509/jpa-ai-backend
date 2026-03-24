@@ -1,0 +1,25 @@
+{
+  "name": "jpa-ai-backend",
+  "version": "1.0.0",
+  "description": "JAPAN AGENT AI Backend - LINE Webhook + Gemini AI + Firestore",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^9.4.0",
+    "@google-cloud/firestore": "^7.10.0",
+    "@google/generative-ai": "^0.21.0",
+    "express": "^4.21.2",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "ts-node-dev": "^2.0.0"
+  }
+}
