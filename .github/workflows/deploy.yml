@@ -51,7 +51,7 @@ jobs:
             --project=$PROJECT_ID \
             --platform=managed \
             --allow-unauthenticated \
-            --set-env-vars="LINE_CHANNEL_SECRET=${{ secrets.LINE_CHANNEL_SECRET }},LINE_CHANNEL_ACCESS_TOKEN=${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }},FIREBASE_PROJECT_ID=jpa-live-portal" \
+            --set-env-vars="LINE_CHANNEL_SECRET=${{ secrets.LINE_CHANNEL_SECRET }},LINE_CHANNEL_ACCESS_TOKEN=${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }},GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }},FIREBASE_PROJECT_ID=jpa-live-portal" \
             --min-instances=0 \
             --max-instances=3 \
             --memory=512Mi \
